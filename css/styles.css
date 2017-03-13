@@ -1,8 +1,21 @@
 /********************
 YOUR STYLES
 *******************/
+body{
+    background: lightgrey;
+}
 
+.city {
+  color: red;
+}
 
+.state {
+  color: green;
+}
+
+.temp {
+   color: blue;
+}
 
 
 /********************
