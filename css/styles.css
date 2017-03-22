@@ -1,22 +1,226 @@
-/********************
-YOUR STYLES
-*******************/
-body{
-    background: lightgrey;
+
+body {
+	font-family: 'Oxygen', serif;
+	line-height: 1;
+	color: white;
+	margin: 0;
+	padding: 0;
+	background: #2a2a2a;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+/*HAMBURGER*/
+#sidr-show-hide {
+  position: absolute;
+  z-index: 1000;
+  left: .5em;
+  top: .2em;
+  color: white;
+  font-size: 2.5em;
+  opacity: .8;
+}
+#close { 
+	float: right;
+	font-size: 1.5em;
+	margin: .5em;
+	padding: 5px 9px;
+	border: solid white;
+	border-radius: 100px;
+/*	text-shadow: 0 0 5px white;*/
+}
+.close { 
+	float: right;
+	font-size: 2em;
+	margin: 1em;
+	padding: 0px 6px;
+	border: solid white;
+	border-radius: 100px;
+}
+/*SIDR*/
+a {
+	text-decoration: none;
+	color: white;
+}
+li a {
+	width: 100%;
+	padding: .em .5em .5em 0;
+/*	margin-right: 100%;*/
 }
 
-.city {
-  color: red;
+li a:active  {
+	background: white;
+	color: black;
 }
 
-.state {
-  color: green;
+.places {
+  list-style-type: none;
+	margin: 0 0 0 2em;
+	padding-top: 5em
+	
+}
+li {
+	width: 100%;
+	padding: .6em 0;
+	
 }
 
+
+/*different cities*/
+section {
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+  background: black;
+}
+
+#portland{
+    background: lightgreen;
+}
+
+#seattle{
+   background: cornflowerblue; 
+}
+
+#spokane{
+   background: coral; 
+}
+
+:target {
+  z-index: 1;
+}
+.target {
+	z-index: 2;
+}
+/*Minimal initial style of sidebar*/
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 16em;
+    overflow-x: hidden;
+    overflow-y: auto;
+	background: #2c2c2c;
+    opacity: .8;
+	box-shadow: inset -20px -30px 100px -20px black;
+    }
+
+.left {
+        left: -16em;
+        right: auto;
+}
+
+/*initial section styling*/
+.info {
+	margin: 11em 0 0 0;
+} 
+
+h1 {
+    
+    margin: auto;
+    position: absolute;
+    top: 13em;
+    right: 27%;
+}
+
+
+
+h3 {
+    position: absolute;
+    top: 13em;
+    right: 29.7%;
+    letter-spacing: 5px;
+    
+    
+}
 .temp {
-   color: blue;
+	font-size: 4em;
+	line-height: 1;
+}
+#city {
+    position: absolute;
+    top: 13.5em;
+    right: 36%;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.today {
+    position: absolute;
+    top: 19.7em;
+    border: none;
+    right: 25%;
 }
 
+section i:first-child {
+  font-family: weather;
+  font-size:15em;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  color: darkgrey; 
+	position: absolute;
+	right:25%;
+    top: 65px;
+	margin: 0;
+    opacity: .8
+}
+/*-----forecast------*/
+i {
+  font-family: weather;
+  font-size:3em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+	color: white;
+	margin-top: 4px;
+}
+
+figure {
+    
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	margin: 8px 90px;
+    opacity: .8;
+
+    
+    
+}
+
+.forecast {
+	position: absolute;
+    top: 530px;
+    right: 75px;
+    
+}
+
+/*-----lets get the weather--------*/
+.geo {
+    position: absolute;
+    top: .01em;
+    z-index: 2;
+    background: transparent;
+    width: 100%;
+    padding: .8em;
+    padding-top: 22px;
+    text-align: right;
+    font-family: 'Oxygen', serif;
+    color: white;
+    border: none;
+    opacity: .8;
+}
+
+
+.geo:active {
+	background: white;
+	color: black;
+}
 
 /********************
 MEDIA QUERIES
@@ -24,32 +228,20 @@ MEDIA QUERIES
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
+ 
   
 }
 
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
+ 
 
 }
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+
 
 }
