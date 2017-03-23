@@ -1,11 +1,10 @@
 
 body {
 	font-family: 'Oxygen', serif;
-	line-height: 1;
 	color: white;
 	margin: 0;
 	padding: 0;
-	background: #2a2a2a;
+	
 }
 .wrapper {
 	width: 100%;
@@ -16,7 +15,7 @@ body {
 /*HAMBURGER*/
 #sidr-show-hide {
   position: absolute;
-  z-index: 1000;
+  z-index: 2;
   left: .5em;
   top: .2em;
   color: white;
@@ -28,17 +27,13 @@ body {
 	font-size: 1.5em;
 	margin: .5em;
 	padding: 5px 9px;
-	border: solid white;
-	border-radius: 100px;
-/*	text-shadow: 0 0 5px white;*/
+
 }
 .close { 
 	float: right;
 	font-size: 2em;
 	margin: 1em;
 	padding: 0px 6px;
-	border: solid white;
-	border-radius: 100px;
 }
 /*SIDR*/
 a {
@@ -48,7 +43,7 @@ a {
 li a {
 	width: 100%;
 	padding: .em .5em .5em 0;
-/*	margin-right: 100%;*/
+
 }
 
 li a:active  {
@@ -124,20 +119,20 @@ h1 {
     
     margin: auto;
     position: absolute;
-    top: 13em;
-    right: 27%;
+    top: 16em;
+    right: 51%;
 }
 
 
 
 h3 {
     position: absolute;
-    top: 13em;
-    right: 29.7%;
+    top: 12em;
+    right: 27.7%;
     letter-spacing: 5px;
-    
-    
+   
 }
+
 .temp {
 	font-size: 4em;
 	line-height: 1;
@@ -153,19 +148,16 @@ h3 {
     position: absolute;
     top: 19.7em;
     border: none;
-    right: 25%;
+    right: 21%;
 }
 
 section i:first-child {
   font-family: weather;
   font-size:15em;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: none;
   color: darkgrey; 
 	position: absolute;
-	right:25%;
-    top: 65px;
+	right:28%;
+    top: 40px;
 	margin: 0;
     opacity: .8
 }
@@ -200,11 +192,33 @@ figure {
     
 }
 
+
+.day1{
+        position: absolute;
+    top: -31px;
+    right: -156px;
+    letter-spacing: 3px;
+}
+
+.day2{
+    position: absolute;
+    top: 11px;
+    right: -135px;
+    letter-spacing: 3px;
+}
+
+
+.day3{
+        position: absolute;
+    top: 51px;
+    right: -130px;
+    letter-spacing: 3px;
+}
 /*-----lets get the weather--------*/
 .geo {
     position: absolute;
     top: .01em;
-    z-index: 2;
+    z-index: 1;
     background: transparent;
     width: 100%;
     padding: .8em;
