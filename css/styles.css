@@ -156,7 +156,7 @@ section i:first-child {
   font-size:15em;
   color: darkgrey; 
 	position: absolute;
-	right:28%;
+	right:18%;
     top: 40px;
 	margin: 0;
     opacity: .8
@@ -249,7 +249,98 @@ MEDIA QUERIES
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
- 
+ .geo {
+    position: absolute;
+    top: 0.01em;
+    z-index: 3;
+    background: transparent;
+    width: 100%;
+    padding: .8em;
+    padding-top: 22px;
+    text-align: right;
+    font-family: 'Oxygen', serif;
+    color: white;
+    border: none;
+    opacity: .8;
+    font-size: 27px;
+}
+    
+    #sidr-show-hide {
+    position: absolute;
+    z-index: 4;
+    left: .5em;
+    top: .2em;
+    color: white;
+    font-size: 3.5em;
+    opacity: .8;
+}
+    
+    #city {
+    position: absolute;
+    top: 1.5em;
+    right: 22%;
+    font-size: 83px;
+    letter-spacing: 12px;
+}
+    
+    .today {
+    position: absolute;
+    top: 6.6em;
+    border: none;
+    right: 28%;
+    font-size: 30px;
+}
+    
+    h3 {
+    position: absolute;
+    top: 13em;
+    font-size: 26px;
+    right: 33%;
+    letter-spacing: 5px;
+}
+    
+    section i:first-child {
+    font-family: weather;
+    font-size: 30em;
+    color: snow;
+    position: absolute;
+    right: 46%;
+    top: 385px;
+    margin: 0;
+    opacity: 0.8;
+}
+    
+    h1 {
+    margin: auto;
+    position: absolute;
+    top: 11em;
+    right: 8%;
+    font-size: 3em;
+}
+    
+    .day1 {
+    position: absolute;
+    top: 5em;
+    right: -1.2em;
+    font-size: 2.3em;
+    letter-spacing: 12px;
+}
+    
+    .day2 {
+    position: absolute;
+    top: 6.7em;
+    right: .8em;
+    font-size: 2.5em;
+    letter-spacing: 12px;
+}
+    
+    .day3 {
+    position: absolute;
+    top: 9em;
+    right: 24px;
+    font-size: 2.5em;
+    letter-spacing: 12px;
+}
 
 }
 
