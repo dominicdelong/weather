@@ -128,7 +128,7 @@ h1 {
 h3 {
     position: absolute;
     top: 12em;
-    right: 27.7%;
+    right: 25%;
     letter-spacing: 5px;
    
 }
@@ -156,8 +156,8 @@ section i:first-child {
   font-size:15em;
   color: darkgrey; 
 	position: absolute;
-	right:18%;
-    top: 40px;
+	right:25%;
+    top: 4px;
 	margin: 0;
     opacity: .8
 }
@@ -397,7 +397,7 @@ MEDIA QUERIES
 }
     
     section i:first-child {
-    top: 225px;
+    top: 120px;
     right: 53%;
     font-size: 46em;
     color: snow;
