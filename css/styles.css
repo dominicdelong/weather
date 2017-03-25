@@ -38,11 +38,15 @@ body {
 /*SIDR*/
 a {
 	text-decoration: none;
-	color: white;
+	color: lightgreen;
+    letter-spacing: 2px;
+    font-size: 20px
 }
 li a {
+    font-family: 'Oxygen', sans-serif;
 	width: 100%;
 	padding: .em .5em .5em 0;
+    letter-spacing: 2px;
 
 }
 
@@ -90,7 +94,7 @@ section {
 .target {
 	z-index: 2;
 }
-/*Minimal initial style of sidebar*/
+/*my little side bar*/
 .sidr {
     display: block;
     position: fixed;
@@ -100,9 +104,8 @@ section {
     width: 16em;
     overflow-x: hidden;
     overflow-y: auto;
-	background: #2c2c2c;
+	background: black;
     opacity: .8;
-	box-shadow: inset -20px -30px 100px -20px black;
     }
 
 .left {
@@ -116,7 +119,7 @@ section {
 } 
 
 h1 {
-    
+    font-family: 'Oxygen', sans-serif;
     margin: auto;
     position: absolute;
     top: 16em;
@@ -126,9 +129,10 @@ h1 {
 
 
 h3 {
+    font-family: 'Oxygen', sans-serif;
     position: absolute;
     top: 12em;
-    right: 37%;
+    right: 20%;
     letter-spacing: 5px;
    
 }
@@ -138,6 +142,7 @@ h3 {
 	line-height: 1;
 }
 #city {
+    font-family: 'Oxygen', sans-serif;
     position: absolute;
     top: 13.5em;
     right: 36%;
@@ -145,6 +150,7 @@ h3 {
     letter-spacing: 3px;
 }
 .today {
+    font-family: 'Oxygen', sans-serif;
     position: absolute;
     top: 19.7em;
     border: none;
@@ -393,7 +399,7 @@ MEDIA QUERIES
     position: absolute;
     top: 18em;
     font-size: 37px;
-    right: 23%;
+    right: 24%;
 }
     
     section i:first-child {
